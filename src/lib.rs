@@ -21,8 +21,12 @@
 
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 
+#[macro_use]
+extern crate amplify;
+
 mod uservice;
 mod uthread;
+mod ustream;
 
 pub use uservice::{UError, UErrorMsg, UErrorSender, UResponder, UResult, USender, UService};
 pub use uthread::UThread;
